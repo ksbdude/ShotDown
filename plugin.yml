@@ -1,0 +1,19 @@
+name: KRealms
+version: 1.0
+main: main.Main
+description: Offical KRealms PLugin
+ 
+commands:
+    shotdown:
+        usage: /<command>
+        aliases: [sd]
+        description: Main Shotdown Command.
+        
+permissions:
+    krealms.*:
+        description: Gives access to all Shotdown commands
+        children:
+            doorman.setspawn: true
+    krealms.setspawn:
+        description: Allows you to Set the Spawn Location
+        default: op
